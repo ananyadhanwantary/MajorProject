@@ -6,6 +6,7 @@ import LoginComponent from './Components/LoginComponent';
 import FooterComponent from './Components/FooterComponent';
 import SignUpComponent from './Components/SignUpComponent';
 import LandingPageComponent from './Components/LandingPageComponent';
+import UploadComponent from './Components/UploadComponent';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/home" element={<HomeComponent/>}/>
         <Route path="/login" element={<LoginComponent/>}/>
         <Route path="/signup" element={<SignUpComponent/>}/>
+        <Route path="/upload" element={<UploadComponent/>}/>
       </Routes>
       <FooterComponent/>
       </BrowserRouter>
