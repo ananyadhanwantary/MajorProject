@@ -1,3 +1,93 @@
+// import { useNavigate } from "react-router-dom";
+
+// function HeaderComponent() {
+//   const navigate = useNavigate();
+
+//   function handleLogin(e) {
+//     e.preventDefault();
+//     navigate("/login");
+//   }
+
+//   function handleSignup(e) {
+//     e.preventDefault();
+//     navigate("/signup");
+//   }
+
+//   return (
+//     <>
+//       <header
+//         style={{
+//           display: "flex",
+//           justifyContent: "space-between",
+//           alignItems: "center",
+//           padding: "15px 30px",
+//           backgroundColor: "#34495e",
+//           color: "white",
+//           boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+//         }}
+//       >
+//         <h1 style={{ margin: 0, fontSize: "28px", fontWeight: "bold" }}>
+//           My App
+//         </h1>
+//         <nav>
+//           <ul
+//             style={{
+//               listStyle: "none",
+//               display: "flex",
+//               gap: "20px",
+//               margin: 0,
+//               padding: 0,
+//             }}
+//           >
+//             <li>
+//               <a
+//                 href="#login"
+//                 style={{
+//                   textDecoration: "none",
+//                   color: "#1abc9c",
+//                   fontWeight: "bold",
+//                   fontSize: "16px",
+//                   padding: "8px 12px",
+//                   borderRadius: "5px",
+//                   backgroundColor: "transparent",
+//                   transition: "all 0.3s ease",
+//                 }}
+//                 onClick={(e) => {
+//                   handleLogin(e);
+//                 }}
+//               >
+//                 Login
+//               </a>
+//             </li>
+//             <li>
+//               <a
+//                 href="#signup"
+//                 style={{
+//                   textDecoration: "none",
+//                   color: "#e74c3c",
+//                   fontWeight: "bold",
+//                   fontSize: "16px",
+//                   padding: "8px 12px",
+//                   borderRadius: "5px",
+//                   backgroundColor: "transparent",
+//                   transition: "all 0.3s ease",
+//                 }}
+//                 onClick={(e) => {
+//                   handleSignup(e);
+//                 }}
+//               >
+//                 Sign Up
+//               </a>
+//             </li>
+//           </ul>
+//         </nav>
+//       </header>
+//     </>
+//   );
+// }
+
+// export default HeaderComponent;
+
 import { useNavigate } from "react-router-dom";
 
 function HeaderComponent() {
@@ -20,21 +110,22 @@ function HeaderComponent() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "15px 30px",
-          backgroundColor: "#34495e",
+          padding: "15px 30px", // Adjusted padding
+          background: "linear-gradient(135deg, #f6c667, #d98b4e)", // Gradient background
           color: "white",
-          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)", // Softer shadow
+          borderRadius: "6px", // Rounded corners for a modern look
         }}
       >
-        <h1 style={{ margin: 0, fontSize: "28px", fontWeight: "bold" }}>
-          My App
+        <h1 style={{ margin: 0, fontSize: "30px", fontWeight: "bold", letterSpacing: "0.5px" }}>
+          <span style={{ color: "#d98b4e" }}>Eye</span> Care
         </h1>
         <nav>
           <ul
             style={{
               listStyle: "none",
               display: "flex",
-              gap: "20px",
+              gap: "10px", // Reduced spacing between the items
               margin: 0,
               padding: 0,
             }}
@@ -44,17 +135,15 @@ function HeaderComponent() {
                 href="#login"
                 style={{
                   textDecoration: "none",
-                  color: "#1abc9c",
+                  color: "white", // Changed text color to white
                   fontWeight: "bold",
                   fontSize: "16px",
                   padding: "8px 12px",
-                  borderRadius: "5px",
-                  backgroundColor: "transparent",
-                  transition: "all 0.3s ease",
+                  borderRadius: "6px",
+                  backgroundColor: "transparent", // Transparent background
+                  transition: "background-color 0.3s ease, color 0.3s ease",
                 }}
-                onClick={(e) => {
-                  handleLogin(e);
-                }}
+                onClick={(e) => handleLogin(e)}
               >
                 Login
               </a>
@@ -64,17 +153,15 @@ function HeaderComponent() {
                 href="#signup"
                 style={{
                   textDecoration: "none",
-                  color: "#e74c3c",
+                  color: "white", // Changed text color to white
                   fontWeight: "bold",
                   fontSize: "16px",
                   padding: "8px 12px",
-                  borderRadius: "5px",
-                  backgroundColor: "transparent",
-                  transition: "all 0.3s ease",
+                  borderRadius: "6px",
+                  backgroundColor: "transparent", // Transparent background
+                  transition: "background-color 0.3s ease, color 0.3s ease",
                 }}
-                onClick={(e) => {
-                  handleSignup(e);
-                }}
+                onClick={(e) => handleSignup(e)}
               >
                 Sign Up
               </a>

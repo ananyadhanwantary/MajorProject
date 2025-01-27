@@ -13,6 +13,7 @@ function App() {
     <div>
       <BrowserRouter>
       <HeaderComponent/>
+      <br/>
       <Routes>
         <Route path="/" element={<LandingPageComponent/>}/>
         <Route path="/home" element={<HomeComponent/>}/>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/signup" element={<SignUpComponent/>}/>
         <Route path="/upload" element={<UploadComponent/>}/>
       </Routes>
+      <br/>
       <FooterComponent/>
       </BrowserRouter>
     </div>
