@@ -1,10 +1,10 @@
 from flask import Flask, request, jsonify
 import tensorflow as tf
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # Load the model
-model = tf.keras.models.load_model('alzheimer_mobilenet_model.h5')
+model = tf.keras.models.load_model('diabetic_retinopathy_resnet50.pth')
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -13,5 +13,6 @@ def predict():
     prediction = model.predict([features])
     return jsonify({'prediction': prediction.tolist()})
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     app.run(debug=True)
+    

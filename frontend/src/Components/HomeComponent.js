@@ -80,7 +80,7 @@ const HomeComponent = () => {
             }}
             onMouseOver={(e) => (e.target.style.backgroundColor = "#2980b9")}
             onMouseOut={(e) => (e.target.style.backgroundColor = "#3498db")}
-            onClick={() => navigate ("/upload")}
+            onClick={() => navigate("/upload")}
           >
             Go to Upload Page
           </button>
