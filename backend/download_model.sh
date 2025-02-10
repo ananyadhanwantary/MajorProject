@@ -5,3 +5,8 @@
 
 echo "wget -O backend/classifier.pth 'https://drive.google.com/uc?export=download&id=1SJwQuYlsmQfQrfNU2DUSH-4wN7OBqIAM'" > download_model.sh
 chmod +x download_model.sh
+
+# commands to remove git push error
+# git rm --cached backend/classifier.pth
+# git commit -m "Untracked classifier.pth"
+# git push origin master
