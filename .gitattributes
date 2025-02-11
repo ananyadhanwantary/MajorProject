@@ -1,0 +1,2 @@
+backend/classifier.pth filter=lfs diff=lfs merge=lfs -text
+backend/classifier.pth !text !filter !merge !diff
